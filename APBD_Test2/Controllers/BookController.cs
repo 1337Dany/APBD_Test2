@@ -15,7 +15,7 @@ public class BookController(IBookService bookService) : ControllerBase
     {
         try
         {
-            await bookService.AddNewBook(addBookDto);
+            await bookService.AddNewBookAsync(addBookDto);
             return Ok();
         }
         catch (Exception e)

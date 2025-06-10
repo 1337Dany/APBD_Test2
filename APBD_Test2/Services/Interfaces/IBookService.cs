@@ -5,5 +5,5 @@ namespace APBD_Test2.Services.Interfaces;
 
 public interface IBookService
 {
-    public Task<int> AddNewBook(AddBookDTO addBookDto);
+    public Task<int> AddNewBookAsync(AddBookDTO addBookDto);
 }

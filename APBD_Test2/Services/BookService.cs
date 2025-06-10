@@ -14,7 +14,7 @@ public class BookService : IBookService
         _context = context;
     }
     
-    public async Task<int> AddNewBook(AddBookDTO addBookDto)
+    public async Task<int> AddNewBookAsync(AddBookDTO addBookDto)
     {
         var publishingHouse = await _context.PublishingHouses
             .FirstOrDefaultAsync(ph => ph.IdPublishingHouse == addBookDto.IdPublishingHouse);
